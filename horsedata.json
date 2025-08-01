@@ -1,0 +1,283 @@
+
+{
+    "nicenature": {
+        "name": "Nice Nature",
+        "stars": 1,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1060_106001.png",
+        "speed": 86,
+        "stamina": 72,
+        "power": 89,
+        "guts": 69,
+        "wit": 84
+    },
+    "winningticket": {
+        "name": "Winning Ticket",
+        "stars": 1,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1035_103501.png",
+        "speed": 87,
+        "stamina": 68,
+        "power": 91,
+        "guts": 74,
+        "wit": 80
+    },
+    "agnestachyon": {
+        "name": "Agnes Tachyon",
+        "stars": 1,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1032_103201.png",
+        "speed": 82,
+        "stamina": 76,
+        "power": 76,
+        "guts": 79,
+        "wit": 87
+    },
+    "mejiroryan": {
+        "name": "Mejiro Ryan",
+        "stars": 1,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1027_102701.png",
+        "speed": 87,
+        "stamina": 66,
+        "power": 95,
+        "guts": 71,
+        "wit": 81
+    },
+    "matikanefukukitaru": {
+        "name": "Matikanefukukitaru",
+        "stars": 1,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1056_105601.png",
+        "speed": 77,
+        "stamina": 81,
+        "power": 88,
+        "guts": 81,
+        "wit": 73
+    },
+    "haruurara": {
+        "name": "Haru Urara",
+        "stars": 1,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1052_105201.png",
+        "speed": 83,
+        "stamina": 58,
+        "power": 89,
+        "guts": 86,
+        "wit": 84
+    },
+    "bakushin": {
+        "name": "Sakura Bakushin O",
+        "stars": 1,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1041_104101.png",
+        "speed": 87,
+        "stamina": 54,
+        "power": 93,
+        "guts": 85,
+        "wit": 81
+    },
+    "kinghalo": {
+        "name": "King Halo",
+        "stars": 1,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1061_106101.png",
+        "speed": 87,
+        "stamina": 60,
+        "power": 93,
+        "guts": 73,
+        "wit": 87
+    },
+    "daiwascarlet": {
+        "name": "Daiwa Scarlet",
+        "stars": 2,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1009_100901.png",
+        "speed": 84,
+        "stamina": 77,
+        "power": 79,
+        "guts": 95,
+        "wit": 90
+    },
+    "goldship": {
+        "name": "Gold Ship",
+        "stars": 2,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1007_100701.png",
+        "speed": 82,
+        "stamina": 96,
+        "power": 100,
+        "guts": 77,
+        "wit": 70
+    },
+    "vodka": {
+        "name": "Vodka",
+        "stars": 2,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1008_100801.png",
+        "speed": 96,
+        "stamina": 61,
+        "power": 105,
+        "guts": 75,
+        "wit": 88
+    },
+    "supercreek": {
+        "name": "Super Creek",
+        "stars": 2,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1045_104501.png",
+        "speed": 65,
+        "stamina": 100,
+        "power": 71,
+        "guts": 100,
+        "wit": 89
+    },
+    "mayanotopgun": {
+        "name": "Mayano Top Gun",
+        "stars": 2,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1024_102401.png",
+        "speed": 73,
+        "stamina": 100,
+        "power": 67,
+        "guts": 95,
+        "wit": 90
+    },
+    "airgroove": {
+        "name": "Air Groove",
+        "stars": 2,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1018_101801.png",
+        "speed": 86,
+        "stamina": 81,
+        "power": 81,
+        "guts": 86,
+        "wit": 91
+    },
+    "elcondorpasa": {
+        "name": "El Condor Pasa",
+        "stars": 2,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1014_101401.png",
+        "speed": 85,
+        "stamina": 76,
+        "power": 80,
+        "guts": 93,
+        "wit": 91
+    },
+    "grasswonder": {
+        "name": "Grass Wonder",
+        "stars": 2,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1011_101101.png",
+        "speed": 91,
+        "stamina": 70,
+        "power": 99,
+        "guts": 74,
+        "wit": 91
+    },
+    "riceshower": {
+        "name": "Rice Shower",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1030_103001.png",
+        "speed": 71,
+        "stamina": 117,
+        "power": 70,
+        "guts": 102,
+        "wit": 90
+    },
+    "symbolirudolf": {
+        "name": "Symboli Rudolf",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1017_101701.png",
+        "speed": 86,
+        "stamina": 91,
+        "power": 83,
+        "guts": 96,
+        "wit": 94
+    },
+    "mejiromcqueen": {
+        "name": "Mejiro McQueen",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1013_101301.png",
+        "speed": 71,
+        "stamina": 111,
+        "power": 71,
+        "guts": 103,
+        "wit": 94
+    },
+    "taikishuttle": {
+        "name": "Taiki Shuttle",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1010_101001.png",
+        "speed": 96,
+        "stamina": 71,
+        "power": 98,
+        "guts": 93,
+        "wit": 92
+    },
+    "oguricap": {
+        "name": "Oguri Cap",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1006_100601.png",
+        "speed": 101,
+        "stamina": 66,
+        "power": 106,
+        "guts": 84,
+        "wit": 93
+    },
+    "maruzensky": {
+        "name": "Maruzensky",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1004_100401.png",
+        "speed": 96,
+        "stamina": 68,
+        "power": 86,
+        "guts": 100,
+        "wit": 100
+    },
+    "tokaiteio": {
+        "name": "Tokai Teio",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1003_100301.png",
+        "speed": 90,
+        "stamina": 89,
+        "power": 83,
+        "guts": 92,
+        "wit": 96
+    },
+    "silencesuzuka": {
+        "name": "Silence Suzuka",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1002_100201.png",
+        "speed": 101,
+        "stamina": 84,
+        "power": 77,
+        "guts": 100,
+        "wit": 88
+    },
+    "specialweek": {
+        "name": "Special Week",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1001_100101.png",
+        "speed": 83,
+        "stamina": 88,
+        "power": 98,
+        "guts": 90,
+        "wit": 91
+    },
+    "tmoperao": {
+        "name": "TM Opera O",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1015_101501.png",
+        "speed": 75,
+        "stamina": 108,
+        "power": 75,
+        "guts": 102,
+        "wit": 90
+    },
+    "mihonobourbon": {
+        "name": "Mihono Bourbon",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1026_102601.png",
+        "speed": 96,
+        "stamina": 72,
+        "power": 92,
+        "guts": 102,
+        "wit": 88
+    },
+    "biwahayahide": {
+        "name": "Biwa Hayahide",
+        "stars": 3,
+        "image": "https://gametora.com/images/umamusume/characters/chara_stand_1023_102301.png",
+        "speed": 85,
+        "stamina": 93,
+        "power": 82,
+        "guts": 93,
+        "wit": 97
+    }
+}
