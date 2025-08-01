@@ -63,43 +63,40 @@ for uma in allhorses:
 async def roll(interaction: discord.Interaction):
     user = interaction.user
     userid = str(user.id)
-    if userid == "1142504208206151740":
-        await interaction.response.send_message("you cant do that, adam.")
-    else:
-        temphorse = []
-        tempembed = []
-        pullnumber = 0
-        for i in range(5):
-            pullnumber += 1
-            number = random.randint(1, 100)
-            if number <= 3: # 3% chance for 3*
-                temphorse.append(random.choice(threestarhorses))
-            elif number <= 21: # 18% chance for 2*
-                temphorse.append(random.choice(twostarhorses))
-            else: # 79% chance for 2*
-                temphorse.append(random.choice(onestarhorses))
-        with open("userhorsedata.json", "r") as file:
-            data = json.load(file)
-        if str(userid) not in data.keys():
-            data[userid] = {
-                "ownedhorses": []
-            }
-        for horse in temphorse:
-            horsedict = horse.to_dict()
-            embed = discord.Embed(title=f"you got {horsedict['name']}!", description=("⭐" * horsedict["stars"]))
-            embed.set_thumbnail(url=horsedict["image"])
-            tempembed.append(embed)
-            for ownedhorse in data[userid]["ownedhorses"]:
-                if horsedict["name"] == ownedhorse["name"]:
-                    ownedhorse["copies"]+=1
-                    break
-            else:
-                horsedict["copies"] = 1
-                data[userid]["ownedhorses"].append(horsedict)
-            
-        with open("userhorsedata.json", "w") as file:
-            json.dump(data, file, indent=4)
-        await interaction.response.send_message(embeds=tempembed)
+    temphorse = []
+    tempembed = []
+    pullnumber = 0
+    for i in range(5):
+        pullnumber += 1
+        number = random.randint(1, 100)
+        if number <= 3: # 3% chance for 3*
+            temphorse.append(random.choice(threestarhorses))
+        elif number <= 21: # 18% chance for 2*
+            temphorse.append(random.choice(twostarhorses))
+        else: # 79% chance for 1*
+            temphorse.append(random.choice(onestarhorses))
+    with open("userhorsedata.json", "r") as file:
+        data = json.load(file)
+    if str(userid) not in data.keys():
+        data[userid] = {
+            "ownedhorses": []
+        }
+    for horse in temphorse:
+        horsedict = horse.to_dict()
+        embed = discord.Embed(title=f"you got {horsedict['name']}!", description=("⭐" * horsedict["stars"]))
+        embed.set_thumbnail(url=horsedict["image"])
+        tempembed.append(embed)
+        for ownedhorse in data[userid]["ownedhorses"]:
+            if horsedict["name"] == ownedhorse["name"]:
+                ownedhorse["copies"]+=1
+                break
+        else:
+            horsedict["copies"] = 1
+            data[userid]["ownedhorses"].append(horsedict)
+        
+    with open("userhorsedata.json", "w") as file:
+        json.dump(data, file, indent=4)
+    await interaction.response.send_message(embeds=tempembed)
 
 @client.tree.command(name="all", description="all horses")
 async def all(interaction: discord.Interaction):
