@@ -22,14 +22,14 @@ with open("horsedata.json") as file:
 
 class Umamusumehorse():
     def __init__(self, horse): 
-        self.name = horsesjson[horse]["name"]
-        self.stars = horsesjson[horse]["stars"]
-        self.image = horsesjson[horse]["image"]
-        self.speed = horsesjson[horse]["speed"]
-        self.stamina = horsesjson[horse]["stamina"]
-        self.power = horsesjson[horse]["power"]
-        self.guts = horsesjson[horse]["guts"]
-        self.wit = horsesjson[horse]["wit"]
+        self.name = horsesjson[horse]['name']
+        self.stars = horsesjson[horse]['stars']
+        self.image = horsesjson[horse]['image']
+        self.speed = horsesjson[horse]['speed']
+        self.stamina = horsesjson[horse]['stamina']
+        self.power = horsesjson[horse]['power']
+        self.guts = horsesjson[horse]['guts']
+        self.wit = horsesjson[horse]['wit']
         self.copies = 0
     def to_dict(self): 
         return {
@@ -59,7 +59,7 @@ for uma in allhorses:
     if uma.stars == 3:
         threestarhorses.append(uma)
 
-@client.tree.command(name="roll", description="roll 5 horses")
+@client.tree.command(name="roll", description="Roll 5 umas")
 async def roll(interaction: discord.Interaction):
     user = interaction.user
     userid = str(user.id)
@@ -83,32 +83,37 @@ async def roll(interaction: discord.Interaction):
         }
     for horse in temphorse:
         horsedict = horse.to_dict()
-        embed = discord.Embed(title=f"you got {horsedict['name']}!", description=("⭐" * horsedict["stars"]))
-        embed.set_thumbnail(url=horsedict["image"])
+        embed = discord.Embed(title=f"you got {horsedict['name']}!", description=("⭐" * horsedict['stars']))
+        embed.set_thumbnail(url=horsedict['image'])
         tempembed.append(embed)
-        for ownedhorse in data[userid]["ownedhorses"]:
-            if horsedict["name"] == ownedhorse["name"]:
-                ownedhorse["copies"]+=1
+        for ownedhorse in data[userid]['ownedhorses']:
+            if horsedict['name'] == ownedhorse['name']:
+                ownedhorse['copies']+=1
                 break
         else:
-            horsedict["copies"] = 1
-            data[userid]["ownedhorses"].append(horsedict)
+            horsedict['copies'] = 1
+            data[userid]['ownedhorses'].append(horsedict)
         
     with open("userhorsedata.json", "w") as file:
         json.dump(data, file, indent=4)
     await interaction.response.send_message(embeds=tempembed)
 
-@client.tree.command(name="all", description="all horses")
+@client.tree.command(name="all", description="See all your umas")
 async def all(interaction: discord.Interaction):
     user = interaction.user
     userid = str(user.id) 
-    message = "you own:\n"
+    message = "You own:\n"
     with open("userhorsedata.json", "r") as file:
         data = json.load(file)
-    ownedhorselist = data[userid]["ownedhorses"]
+    try:
+        ownedhorselist = data[userid]['ownedhorses']
+    except KeyError:
+        await interaction.response.send_message("You have no umas! use /roll to get some.")
+        return
     for horse in ownedhorselist:
-        message += f"{horse["name"]} (" + ("⭐" * int(horse["stars"]))+f") copies: {horse["copies"]}\n"
+        message += f"{horse['name']} (" + ("⭐" * int(horse['stars']))+f") copies: {horse['copies']}\n"
     await interaction.response.send_message(message)
+        
 
     
 client.run(API_KEY)
